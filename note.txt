@@ -1,0 +1,42 @@
+
+
+
+<<<<<<<<<<<<<<<before use this code you have to setup something>>>>>>>>>>>>>>>
+
+1. add 'http', 'get', and 'flutter_stripe' package from pub.dev on pubspec.yaml
+2. you have to follow suggestions of flutter_stripe readme.
+2. you have to go on your project> android> app>build.gradle. to set minSdkVersion or minSdk 21
+just paste it "minSdkVersion 21"
+3.now you have to change the kotlin version.go android>build.gradle:
+and paste it top
+buildscript {
+    ext.kotlin_version = "1.9.22"
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+or paste  ext.kotlin_version = "1.9.22" on the buildscript.
+
+4. now you have to go android> app>src>main>kotlin> MainActivity.kt:
+use 'FlutterFragmentActivity' instead of 'FlutterActivity' where it is
+
+5. go android> app> src> main>res>value>styles.xml:
+paste:
+<style name="LaunchTheme" parent="Theme.AppCompat.Light.NoActionBar">
+on below <resources>
+and paste
+   <style name="NormalTheme" parent="Theme.MaterialComponents">
+  on below
+
+6. same as 5
+android> app> src> main>res>values-night
+now do same thing as no 5.
+
+
+
+
