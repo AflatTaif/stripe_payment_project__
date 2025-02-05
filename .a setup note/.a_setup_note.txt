@@ -1,7 +1,7 @@
 
 
 
-<<<<<<<<<<<<<<<before use this code you have to setup something>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<before use this code you have to setup those setps for using>>>>>>>>>>>>>>>
 
 1. add 'http', 'get', and 'flutter_stripe' package from pub.dev on pubspec.yaml
 2. you have to follow suggestions of flutter_stripe readme.
